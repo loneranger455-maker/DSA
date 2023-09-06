@@ -88,9 +88,14 @@ int calculate(int value){
 
 };
 int main(){
-    polynomial puj("5x^2+9x-7");
-   
-    cout<<puj.calculate(1)<<endl;
+    string polynomial_str;
+    int number;
+    cout<<"Enter the input polynomial f(x):";
+    cin>>polynomial_str;
+    polynomial puj(polynomial_str);
+    cout<<"Enter the number x to calculate f(x)"
+    cin>> number;
+    cout<<puj.calculate(number)<<endl;
 
 
 }
